@@ -79,7 +79,7 @@ Here are some screenshots of the project:
 ![Profile](screenshots/profile.png) 
 
 ### SignUp Form  
-![SignUp](screenshots/singUp.png)  
+![SignUp](screenshots/signUp.png)  
 
 ### Admin Dashboard  
 ![Admin Dashboard](screenshots/adminDashboard.png)  
