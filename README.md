@@ -1,7 +1,3 @@
-Here's the updated README file with the new section added:
-
----
-
 # Animus Club Project - Angular Application  
 
 A collaborative project about the Animus Club activities at our university was created in November 2023. The project demonstrates the use of various Angular concepts and practices learned during our sessions, such as Two-way Data Binding, Event Binding, Routing, Guards, Pipes, and more.
