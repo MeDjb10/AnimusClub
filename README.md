@@ -1,3 +1,7 @@
+Here's the updated README file with the new section added:
+
+---
+
 # Animus Club Project - Angular Application  
 
 A collaborative project about the Animus Club activities at our university was created in November 2023. The project demonstrates the use of various Angular concepts and practices learned during our sessions, such as Two-way Data Binding, Event Binding, Routing, Guards, Pipes, and more.
@@ -62,6 +66,17 @@ This project incorporates various Angular features, including:
 
 ---
 
+## 🌐 **Open Source API Integration**  
+
+For learning purposes, we integrated an open-source API to fetch and display Pokémon data. This helped us understand:  
+
+- Making HTTP requests using Angular's HttpClient module.  
+- Handling asynchronous operations with `async` and `await`.  
+- Manipulating and displaying data fetched from an external API.  
+- Error handling in HTTP requests.  
+
+---
+
 ## 📸 **Screenshots**  
 
 Here are some screenshots of the project:  
@@ -111,3 +126,5 @@ For any questions, feel free to reach out!
 
 - Email: [jabou.medamine@gmail.com](mailto:jabou.medamine@gmail.com)
 - Email: [mouelhi.medtaleb@gmail.com](mailto:mouelhi.medtaleb@gmail.com)  
+
+--- 
