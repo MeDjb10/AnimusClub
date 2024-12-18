@@ -1,0 +1,106 @@
+#bg{
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../assets/loginbg.png");
+    background-size: cover;
+}
+#title{
+    font-family: 'asix';
+    font-size: 8vw;
+    text-shadow: 5px 5px black;
+    color:#fff;
+    text-align: center;
+    margin: 0;
+
+}
+
+#home{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+#subtitle{
+    margin: 0;
+    font-family: 'asix';
+    font-size: 3vw;
+    text-shadow: 3px 3px black;
+    color:#fff;
+    text-align: center;
+    letter-spacing: 30px;
+    margin-left: 22px;
+}
+
+#logindiv{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background: rgb(90, 7, 129);
+    background: linear-gradient(16deg, #662c91 52%, #9047c3 97%);
+    box-shadow:3px 0px  10px rgba(0, 0, 0, 0.457) ;
+}
+ 
+.log{
+    width: 500px;
+    height: 250px;
+}
+
+.sign{
+    width: 500px;
+    height: 300px;
+}
+.login{
+    margin: 0;
+    font-family: 'asix';
+    font-size: 50px;
+    color:#fff;
+    margin-bottom: 20px;
+
+}
+
+input{
+    box-shadow:1px 0px  10px rgba(0, 0, 0, 0.564) ;
+    font-family: 'chakraBold';
+    width: 400px;
+    height: 40px;
+    border: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.loginbutton{
+    float:right;
+    box-shadow:1px 0px  10px rgba(0, 0, 0, 0.564) ;
+    margin-top: 5px;
+    font-family: 'chakraBold';
+    color:#662c91;
+    border: 0;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50vh;
+    width:100vw;
+}
+
+.signuptxt{
+    text-align:center;
+    font-family:'chakrabold';
+    font-size:30px;
+    color: #fff;
+}
+.signuplink {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #fff;
+    font-size:20px;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Enrolled In Trainings/worskops</h1>
+    <hr>
+    <div *ngFor="let f of formation" class="formation">
+        <div (click)="onClick(f.id)">
+            <span >{{f.name}}</span><br> {{f.description}}
+        </div>
+    </div>
+</div>

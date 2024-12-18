@@ -1,0 +1,67 @@
+*{
+  font-family: chakrabold;
+}
+.bg {
+  justify-content: space-between;
+  min-height: 100vh;
+  width: auto;
+  background: #020024;
+  background: linear-gradient(36deg, rgb(1, 0, 22) 0%, rgba(70, 7, 236, 1) 100%);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bg2 {
+  
+  padding: 30px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  border-width: bold;
+  border-color: blueviolet;
+
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.662);
+  height: 70vh;
+  width: 70vw;
+}
+
+.bg3{
+  padding: 30px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  border-width: bold;
+  border-color: blueviolet;
+  height: 70vh;
+  width: 25vw;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.662);
+  float: left;
+}
+
+.img{
+  border-radius: 30px;
+  width: 35vw ;
+  max-height: 50vh;
+}
+.price{
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(157, 2, 235);
+  box-shadow: 5px 3px  rgba(0, 0, 0, 0.662);
+  border-radius: 30px;
+  border-width: bold;
+}
+.enroll{
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(157, 2, 235);
+  box-shadow: 5px 3px  rgba(0, 0, 0, 0.662);
+  border-radius: 30px;
+  border-width: bold;
+}
+/* .light{
+  color: white;
+} */

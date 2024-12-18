@@ -1,0 +1,88 @@
+<div *ngIf="!selectedTraining">training not found</div>
+
+<div *ngIf="selectedTraining" class="bg">
+  <div class="bg2">
+    <div style="display: flex">
+      <img height="350px" [src]="selectedTraining.photo" class="img" />
+      <div style="margin-left: 50px">
+        <h1>{{ selectedTraining.name | uppercase}}</h1>
+        <hr style="border-top: solid" />
+        <p>{{ selectedTraining.description }}</p>
+        <hr style="border-top: solid" />
+        <div style="display: flex">
+          <div>
+            Date: {{ selectedTraining.date }} <br />
+            Location: {{ selectedTraining.location | titlecase }}
+          </div>
+          <div style="margin-left: 50px">
+            {{ selectedTraining.nbParticipant }} Spots Available <br />
+            Certif
+            <img
+              class="mx-2"
+              *ngIf="selectedTraining.certif"
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/checkmark--v1.png"
+              alt="checkmark--v1"
+            />
+            <img
+              class="mx-2"
+              *ngIf="!selectedTraining.certif"
+              width="20"
+              height="20"
+              src="https://img.icons8.com/fluency-systems-filled/48/x.png"
+              alt="x"
+            />
+          </div>
+        </div>
+        <hr style="border-top: solid" />
+        <div style="display: flex; justify-content: space-between">
+          <div class="price">{{ selectedTraining.price }} TND</div>
+          <button class="enroll" (click)="enrollMe()" *ngIf="!isEnrolled()">
+            Enroll Me
+          </button>
+          <button class="enroll" *ngIf="isEnrolled()">Enrolled</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border-top: solid" />
+
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <form [formGroup]="commentForm" (ngSubmit)="onSubmitComment()">
+          <div>
+            <input
+              type="text"
+              id="commentText"
+              formControlName="comment"
+              placeholder="Add a comment"
+              style="width: 50vw; padding: 5px; border-radius: 10px"
+            />
+            <button type="submit" style="padding: 5px; border-radius: 10px">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bg3">
+    <h1>Comment</h1>
+    <hr style="border-top: solid" />
+
+    <div style="max-height: 45vh; min-height: 45vh; overflow-y: scroll">
+      <ul class="list-group">
+        <li
+          style="color: black; border-radius: 10px"
+          class="list-group-item"
+          *ngFor="let comment of selectedTraining.comments"
+        >
+          {{ getUser(comment.idUser)?.username }}:
+          <br />
+          {{ comment.text }}
+        </li>
+      </ul>
+    </div>
+    <hr style="border-top: solid" />
+  </div>
+</div>

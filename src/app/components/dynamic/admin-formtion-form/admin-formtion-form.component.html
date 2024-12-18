@@ -1,0 +1,210 @@
+<!-- formation-form.component.html -->
+<div class="page-wrapper">
+  <div class="content">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-8 col-xl-12">
+        <div class="card p-3">
+          <div class="card-header">
+            <h4 class="card-title d-inline-block">
+              {{ isEditMode ? "Modify " : "Add " }}Training
+            </h4>
+          </div>
+          <div class="card-block">
+            <form [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+              <div class="d-flex justify-content-evenly">
+                <div style="width: 40%">
+                  <div class="form-group">
+                    <label for="name">Training Name:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      formControlName="name"
+                      class="form-control"
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['name'].invalid &&
+                        (formationForm.controls['name'].dirty ||
+                          formationForm.controls['name'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['name'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        Training name is required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea
+                      id="description"
+                      formControlName="description"
+                      class="form-control"
+                    ></textarea>
+                    <div
+                      *ngIf="
+                        formationForm.controls['description'].invalid &&
+                        (formationForm.controls['description'].dirty ||
+                          formationForm.controls['description'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['description'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        Training description is required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="photo">URL of photo</label>
+                    <input
+                      type="text"
+                      id="photo"
+                      formControlName="photo"
+                      class="form-control"
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['photo'].invalid &&
+                        (formationForm.controls['photo'].dirty ||
+                          formationForm.controls['photo'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['photo'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        Training photo is required.
+                      </div>
+                      <div
+                        *ngIf="formationForm.controls['photo'].errors?.['pattern']"
+                        class="alert alert-warning p-2"
+                      >
+                        Training photo is invalid.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Training date:</label>
+                    <input
+                      type="text"
+                      id="date"
+                      formControlName="date"
+                      class="form-control"
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['date'].invalid &&
+                        (formationForm.controls['date'].dirty ||
+                          formationForm.controls['date'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['date'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        Training date is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="width: 40%">
+                  <div class="form-group">
+                    <label for="description">price</label>
+                    <input
+                      type="number"
+                      id="price"
+                      formControlName="price"
+                      class="form-control"
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['price'].invalid &&
+                        (formationForm.controls['price'].dirty ||
+                          formationForm.controls['price'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['price'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        price is required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="photo">Max Participant</label>
+                    <input
+                      type="number"
+                      id="max"
+                      formControlName="nbParticipant"
+                      class="form-control"
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['nbParticipant'].invalid &&
+                        (formationForm.controls['nbParticipant'].dirty ||
+                          formationForm.controls['nbParticipant'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['nbParticipant'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        Max Participant number is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="photo">Certif</label>
+                    <input type="checkbox"  id="max" formControlName="certif" class="m-2" />
+                    <label for="photo">Workshop</label>
+                    <input type="checkbox"  id="max" formControlName="workshop" class="m-2"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="photo">Location</label>
+                    <input
+                      type="text"
+                      id="max"
+                      formControlName="location"
+                      class="form-control "
+                    />
+                    <div
+                      *ngIf="
+                        formationForm.controls['location'].invalid &&
+                        (formationForm.controls['location'].dirty ||
+                          formationForm.controls['location'].touched) && !isEditMode
+                      "
+                    >
+                      <div
+                        *ngIf="formationForm.controls['location'].errors?.['required']"
+                        class="alert alert-danger p-2"
+                      >
+                        location is required.
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" [disabled]="formationForm.invalid">
+                    {{ isEditMode ? "Modifier" : "Ajouter" }}
+                  </button>
+                  <button
+                    routerLink="/dashboard/ActivityList"
+                    class="btn btn-danger"
+                  >
+                    Go back
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

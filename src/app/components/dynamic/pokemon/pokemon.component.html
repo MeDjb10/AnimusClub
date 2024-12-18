@@ -1,0 +1,49 @@
+<div class="container">
+  <!-- <div
+    id="liPokemons"
+    [class]="pokemon.types[0].type.name"
+    *ngFor="let pokemon of listPokemons"
+    style="display: inline-block"
+  >
+    <span>
+      <img #front src="{{ pokemon.sprites.front_default }}" />
+      <img #back src="{{ pokemon.sprites.back_default }}" />
+    </span>
+
+    <span><b>Name:</b> {{ pokemon.name.toUpperCase() }}</span>
+
+    <span><b>Type 1:</b> {{ pokemon.types[0].type.name }}</span>
+
+    <span *ngIf="pokemon.types.length == 2">
+      <b>Type 2:</b> {{ pokemon.types[1].type.name }}
+    </span>
+
+    <span><b>Base stats:</b></span>
+    <div class="statsPokemon" *ngFor="let baseStat of pokemon.stats">
+      <span>{{ baseStat.stat.name }}= {{ baseStat.base_stat }}</span>
+    </div>
+  </div> -->
+  <div
+    id="liPokemons"
+    class="card mx-1"
+    [class]="pokemon.types[0].type.name"
+    *ngFor="let pokemon of listPokemons"
+  >
+    <img #front src="{{ pokemon.sprites.front_default }}" />
+    <!-- <img #back src="{{ pokemon.sprites.back_default }}" /> -->
+    <div class="card-body">
+      <h5 class="card-title">{{ pokemon.name.toUpperCase() }}</h5>
+      <div class="statsPokemon" *ngFor="let baseStat of pokemon.stats">
+        <span>{{ baseStat.stat.name }}= {{ baseStat.base_stat }}</span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <span><b>Type 1:</b> {{ pokemon.types[0].type.name }}</span
+        ><span *ngIf="pokemon.types.length == 2">
+          <b>Type 2:</b> {{ pokemon.types[1].type.name }}
+        </span></small
+      >
+    </div>
+  </div>
+</div>

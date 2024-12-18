@@ -1,0 +1,34 @@
+<div class="bg">
+  <form  role="search" [formGroup]="searchForm" (ngSubmit)="onSearchSubmit()">
+  <div class="d-flex container-fluid my-3" style="width: 50rem">
+
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+      formControlName="searchValue" />
+    <button class="btn btn-outline-light" type="submit">Search</button>
+
+  </div>
+  <select class="form-select container-fluid" aria-label="Default select example" style="width: 48.5rem"
+    formControlName="typeValue" (change)="onSearchSubmit()">
+    <option value="0" selected>Open this select menu</option>
+    <option value="1">Training</option>
+    <option value="2">Workshop</option>
+  </select>
+  </form>
+  <h2 class="title m-5">workshops <span>&</span> trainings:</h2>
+  <div class="training-list container">
+    <div class="row gy-3">
+      <div *ngFor="let training of lesFormations" class="training-item col-md-4 my-3">
+        <div class="card" style="cursor: pointer" (click)="onClick(training.id)">
+          <img style="height: 300px;" [src]="training.photo" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ training.name }}</h5>
+            <p class="card-text">
+              {{ training.description }}
+            </p>
+            <a (click)="onClick(training.id)" class="btn btn-primary">Check It</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

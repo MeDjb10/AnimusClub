@@ -1,0 +1,6 @@
+
+  <div  class="formation">
+    <img style="height: 500px;margin-bottom: 50px;"  [ngClass]="{'floatRight': id%2==0}"  [src]="img" [alt]="name">
+    <div   [ngClass]="id%2==0?'textRight':'floatRight' ">{{name| uppercase}}</div>
+  </div>
+

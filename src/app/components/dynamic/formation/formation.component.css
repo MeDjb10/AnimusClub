@@ -1,0 +1,36 @@
+.formation img {
+  width: 800px;
+  border-radius: 80px;
+  filter: grayscale(100%);
+  position: relative;
+  
+}
+.formation img:hover {
+  filter: contrast(100%);
+  cursor: pointer;
+}
+
+.formation{
+  position: relative;
+  width: 50%;
+  margin-top: 200px;
+}
+
+.textRight{
+  right: 0%;
+}
+.floatRight{
+  right: -70%;
+}
+.formation div {
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.614);
+  font-family: "asix";
+  font-size: 3rem;
+  color: rgb(84, 18, 177);
+  position: absolute;
+  top: 50px;
+  text-shadow: 4px 3px 5px  rgba(0, 0, 0, 0.59)
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "asix";
+  src: url("assets\ASIX-FOUNDER.otf");
+}
+
+@font-face {
+  font-family: "chakraBold";
+  src: url("assets\ChakraPetch-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+

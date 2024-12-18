@@ -1,0 +1,48 @@
+*{
+    font-family: chakrabold;
+}
+h1{
+    font-size: 5vw;
+    font-family: asix;
+    color: aliceblue;
+    text-align: center;
+}
+
+hr{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.bg{
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgb(150, 70, 252);
+    background: radial-gradient(circle, rgba(150, 70, 252, 1) 0%, rgba(91, 26, 175, 1) 100%);
+    width: 100vw;
+    min-height: 100vh;
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.564);
+    font-family: "chakraBold";
+    font-size: 2vw;
+    color: #000000;
+    border: 0;
+    width: 10vw;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button:hover {
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.564);
+    border: 1px solid #662c91;
+}
+
+img{
+    width: 3vw;
+    height: 3vw;
+}

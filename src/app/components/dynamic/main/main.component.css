@@ -1,0 +1,13 @@
+.bg {
+  background-image: url("../../../../assets/home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  min-height: 270vh;
+  min-width: 100vh;
+}
+
+.formation{
+  width: 80%;
+  margin-left: 10%;
+}

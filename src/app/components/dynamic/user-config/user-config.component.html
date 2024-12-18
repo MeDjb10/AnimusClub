@@ -1,0 +1,86 @@
+<div style="padding: 10px">
+  <h1>Modify Your Account</h1>
+  <hr />
+  <div style="display: flex; justify-content: space-evenly">
+    <form class="section" [formGroup]="editForm" (ngSubmit)="changeInfo()">
+      <label>Change username: </label>
+      <input type="text" formControlName="username" /> <br />
+      <label>Change email: </label>
+      <input type="text" formControlName="email" /> <br />
+      <br /><button type="submit" class="button">Submit Changes</button>
+    </form>
+    <form
+      style="float: right"
+      class="section"
+      [formGroup]="passwordForm"
+      (ngSubmit)="changePassword()"
+    >
+      <div>
+        <label>Old password: </label>
+        <input type="text" formControlName="pass" />
+        <div
+          class="text-danger fw-bold"
+          *ngIf="
+            passwordForm.controls['pass'].invalid &&
+            (passwordForm.controls['pass'].dirty ||
+              passwordForm.controls['pass'].touched)
+          "
+        >
+          <div
+            *ngIf="passwordForm.controls['pass'].errors?.['required']"
+            class="alert alert-danger p-2"
+          >
+            oldPassword required
+          </div>
+          <div
+            *ngIf="passwordForm.controls['pass'].errors?.['minlength']"
+            class="alert alert-warning p-2"
+          >
+            oldPassword min length 3
+          </div>
+          <div
+            *ngIf="passwordForm.controls['pass'].errors?.['maxlength']"
+            class="alert alert-warning p-2"
+          >
+            oldPassword max length 8
+          </div>
+        </div>
+      </div>
+      <div>
+        <label>New password: </label>
+        <input type="text" formControlName="pass2" />
+        <div
+          class="text-danger fw-bold"
+          *ngIf="
+            passwordForm.controls['pass2'].invalid &&
+            (passwordForm.controls['pass2'].dirty ||
+              passwordForm.controls['pass2'].touched)
+          "
+        >
+          <div
+            *ngIf="passwordForm.controls['pass2'].errors?.['required']"
+            class="alert alert-danger p-2"
+          >
+            oldPassword required
+          </div>
+          <div
+            *ngIf="passwordForm.controls['pass2'].errors?.['minlength']"
+            class="alert alert-warning p-2"
+          >
+            oldPassword min length 3
+          </div>
+          <div
+            *ngIf="passwordForm.controls['pass2'].errors?.['maxlength']"
+            class="alert alert-warning p-2"
+          >
+            oldPassword max length 8
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="button">Change Password</button>
+      </div>
+    </form>
+  </div>
+</div>

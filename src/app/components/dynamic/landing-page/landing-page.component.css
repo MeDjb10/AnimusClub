@@ -1,0 +1,62 @@
+.bg {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/landing page.png");
+  background-size: cover;
+}
+
+.title {
+  font-family: "asix";
+  font-size: 15px;
+  letter-spacing: 2px;
+  /* text-shadow: 1px 1px #662c91; */
+  color: black;
+  text-align: left;
+  margin: 0%;
+  padding: 15px;
+  padding-top: 20px;
+  transform: scaleY(3.5);
+}
+
+
+.logo {
+  margin-top: 15vh;
+  width: 30vw;
+  height: auto;
+  float: left;
+}
+
+.paraDiv {
+  width: 25vw;
+  line-height: 15px;
+  font-family: "chakraBold";
+}
+
+.para {
+  font-size: 6vh;
+  color: black;
+}
+p {
+  font-family: "asix";
+  line-height: normal;
+}
+.span {
+  font-size: 1.75vh;
+}
+
+.link {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #662c91;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #662c91;
+  border-radius: 15px;
+}

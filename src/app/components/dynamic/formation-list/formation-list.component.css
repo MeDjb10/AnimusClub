@@ -1,0 +1,53 @@
+* {
+  font-family: chakraBold;
+}
+
+.bg {
+  min-height: 100vh;
+  width: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(36deg, rgba(2, 0, 36, 1) 0%, rgba(70, 7, 236, 1) 100%);
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.training-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.training-item:hover {
+  transform: scale(1.05);
+  transition: all .4s ease-in-out;
+  
+}
+
+.training-info:hover{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(190deg, rgba(255, 255, 255, 1) 0%, rgba(195, 173, 255, 1) 100%);
+
+}
+.training-info {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.details {
+  color: aliceblue;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.title {
+  font-size: 40px;
+  font-family: asix;
+  color: aliceblue;
+  text-shadow: #000000;
+}

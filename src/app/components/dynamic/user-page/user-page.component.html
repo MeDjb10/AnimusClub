@@ -1,0 +1,44 @@
+<div class="bg">
+
+    <aside class="aside">
+        <div>
+            <img src="..\assets\profile-user.png" alt="">
+        </div>
+        <div class="ulandlogo">
+
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a routerLink="/home/user/uTrainings">
+                        <div routerLinkActive="active" class="element">
+                            Enrolled in Trainings
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/home/user/uConfig">
+                        <div routerLinkActive="active" class="element">
+                             Modify Your Account
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="loggedinUser.isAdmin">
+                    <a routerLink="/dashboard">
+                        <div routerLinkActive="active" class="element">Dashboard
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <img src="..\assets\animusBlack.png" alt="">
+
+        </div>
+    </aside>
+    <div style="display: block; width: 85vw;">
+        <section class="userInfo">
+            <span>{{loggedinUser.username}}</span> <br>
+            {{loggedinUser.email | emailChanger}}
+        </section>
+        <aside class="userMenu">
+            <router-outlet></router-outlet>
+        </aside>
+    </div>
+</div>

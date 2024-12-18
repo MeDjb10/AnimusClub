@@ -1,0 +1,81 @@
+* {
+    font-family: chakraBold;
+}
+
+.bg {
+    background: rgb(150, 70, 252);
+    background: radial-gradient(circle, rgba(150, 70, 252, 1) 0%, rgba(91, 26, 175, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+}
+
+.aside {
+    float: left;
+    padding: 20px;
+    width: 15vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 12vw;
+}
+
+.ulandlogo {
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 54vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.67);
+    padding: 10px;
+}
+
+span {
+    font-family: asix;
+    font-size: 10vw;
+
+}
+
+.userInfo {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.67);
+    font-family: chakrabold;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+}
+
+.userMenu {
+    margin: 10px;
+    height: 45.5vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.67);
+
+}
+
+.element {
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.active a {
+    color: aliceblue;
+}
+
+.active {
+    border: 0;
+    color: aliceblue;
+    background-color: blueviolet;
+}

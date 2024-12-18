@@ -1,0 +1,115 @@
+.container{
+    width: 100vw;
+    max-height: 60vh;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+#liPokemons{ 
+    margin-top: 5px;
+    margin-left: 0;
+    border-radius: 3px;
+    width: 15vw;
+}
+  
+#liPokemons span, .statsPokemon span{
+    display: block;
+    margin-left: 4px;
+}
+
+
+/** Pokemons imgs **/
+img{
+    
+    background-color: white;
+    
+    margin-top: 3px;
+}
+#front{
+    border-top-left-radius: 3px 3px;
+    border-bottom-left-radius: 3px 3px;
+}
+#back{
+    border-top-right-radius: 3px 3px;
+    border-bottom-right-radius: 3px 3px;
+}
+
+/** div Colors from types **/
+.grass{
+    border: 2px solid #4E8234;
+    background-color: #78C850;
+}
+.fire{
+    border: 2px solid #9C531F;
+    background-color: #F08030;
+}
+.water{
+    border: 2px solid #445E9C;
+    background-color: #6890F0;
+} 
+.bug{
+    border: 2px solid #6D7815;
+    background-color: #A8B820;
+}
+.flying{
+    border: 2px solid #6D5E9C;
+    background-color: #A890F0;
+}
+.normal{
+    border: 2px solid #6D6D4E;
+    background-color: #A8A878;
+}
+.dark{
+    border: 2px solid #49392F;
+    background-color: #705848;
+}
+.dragon{
+    border: 2px solid #4924A1;
+    background-color: #7038F8;
+}
+.electric{
+    border: 2px solid #A1871F;
+    background-color: #F8D030;
+}
+.fairy{
+    border: 2px solid #9B6470;
+    background-color: #EE99AC;
+}
+.fighting{
+    border: 2px solid #7D1F1A;
+    background-color: #C03028;
+}
+.ghost{
+    border: 2px solid #493963;
+    background-color: #705898;
+}
+.ground{
+    border: 2px solid #927D44;
+    background-color: #E0C068;
+}
+.ice{
+    border: 2px solid #638D8D;
+    background-color: #98D8D8;
+}
+.poison{
+    border: 2px solid #682A68;
+    background-color: #A040A0;
+}
+.rock{
+    border: 2px solid #786824;
+    background-color: #B8A038;
+}
+.steel{
+    border: 2px solid #787887;
+    background-color: #B8B8D0;
+}
+.steel{
+    border: 2px solid #787887;
+    background-color: #B8B8D0;
+}
+.psychic{
+    border: 2px solid #A13959;
+    background-color: #F85888;
+}

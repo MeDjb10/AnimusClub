@@ -1,0 +1,30 @@
+<div class="bg">
+  <h1>API Pokemon</h1>
+  <div class="d-flex justify-content-center align-items-center">
+    <form [formGroup]="searchForm">
+      <input
+        type="text"
+        formControlName="searchTerm"
+        placeholder="Search..."
+        class="form-control m-2 p-4"
+        style="width: 200px;"
+      />
+    </form>
+    <button class="button" type="button" (click)="getStatsPokemon()">
+      <div
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        "
+      >
+        <img src="../../../../assets/game.png" alt="" />
+        Dex
+        <img src="../../../../assets/game.png" alt="" />
+      </div>
+    </button>
+  </div>
+
+  <hr />
+  <app-pokemon [listPokemons]="pokeStats"></app-pokemon>
+</div>

@@ -1,0 +1,79 @@
+.bg {
+    margin: 0;
+    padding-top: 100px;
+    width: 100%;
+    max-height: 175vh;
+    background-image: url("../../../../assets/abouUsBg.png");
+    background-size: cover;
+}
+
+h1 {
+    font-family: asix;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 75px;
+}
+
+.logo {
+    /* margin-top: 15vh; */
+    width: 40vw;
+    height: auto;
+    float: left;
+}
+
+.paraDiv {
+    width: 50vw;
+    line-height: 15px;
+    font-family: "chakraBold";
+}
+
+.para {
+    font-size: 12vh;
+    color: rgb(255, 255, 255);
+}
+
+.text1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:50px 50px 0px 50px;
+    background-color: rgb(6, 6, 6);
+    margin: 0;
+}
+.text2{
+    text-align: center;
+    color: #fff;
+    font-family: chakrabold;
+    font-size: 5vh;
+    padding:50px;
+    background-color: rgb(93, 7, 197);
+}
+
+.text3{
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
+    text-decoration: none;
+    color: #000000;
+    font-family: chakrabold;
+}
+p {
+    font-family: "asix";
+    line-height: normal;
+}
+
+.creators{
+    width: 70vw;
+    height: 100vh;
+}
+
+.text4{
+    width: 30vw;
+    height: 100vh;
+    background-color: mediumslateblue;
+    font-family: chakrabold;
+    padding: 50px;
+    color: aliceblue;
+    font-size: 3vw;
+}

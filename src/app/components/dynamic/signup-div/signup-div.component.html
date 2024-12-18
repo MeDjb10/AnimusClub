@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="sign" id="logindiv">
+    <p class="login">Sign up</p>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="Your full name"
+      /><br />
+      <div
+        class="text-danger fw-bold"
+       
+        *ngIf="
+          signupForm.controls['username'].invalid &&
+          (signupForm.controls['username'].dirty ||
+            signupForm.controls['username'].touched)
+        "
+      >
+        <div
+        
+          *ngIf="signupForm.controls['username'].errors?.['minlength']"
+          class="alert alert-warning p-2"
+        >
+          min length 3
+        </div>
+        <div
+          
+          *ngIf="signupForm.controls['username'].errors?.['required']"
+          class="alert alert-danger p-2"
+        >
+          req
+        </div>
+      </div>
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Enter your Email address"
+      />
+      <div
+        class="text-danger fw-bold"
+       
+        *ngIf="
+          signupForm.controls['email'].invalid &&
+          (signupForm.controls['email'].dirty ||
+            signupForm.controls['email'].touched)
+        "
+        class="alert alert-danger p-2"
+      >
+        mail invalid
+      </div>
+      <div>
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Choose your password"
+        />
+      </div>
+
+      <div
+        class="text-danger fw-bold"
+       
+        *ngIf="
+          signupForm.controls['password'].invalid &&
+          (signupForm.controls['password'].dirty ||
+            signupForm.controls['password'].touched)
+        "
+      >
+        <div
+         
+          *ngIf="signupForm.controls['password'].errors?.['required']"
+          class="alert alert-danger p-2"
+        >
+          req
+        </div>
+        <div
+         
+          *ngIf="signupForm.controls['password'].errors?.['minlength']"
+          class="alert alert-warning p-2"
+        >
+          min length 3
+        </div>
+        <div
+         
+          *ngIf="signupForm.controls['password'].errors?.['maxlength']"
+          class="alert alert-warning p-2"
+        >
+          max length 8
+        </div>
+      </div>
+
+      <div>
+        <button class="loginbutton" type="submit">
+          Join
+          <i class="fa-solid fa-arrow-right" style="color: #662c91"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<p class="signuptxt">
+  Already A Member?
+  <br />
+  <a class="signuplink" routerLink="/loginpage/login"> Log In Now!! </a>
+</p>

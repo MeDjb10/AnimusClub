@@ -1,0 +1,117 @@
+<div class="bg">
+  <h1>! About us !</h1>
+  <br />
+  <div style="margin-left: 100px; margin-right: 100px; margin-bottom: 50px">
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-interval="10000"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" *ngFor="let img of slides">
+          <img [src]="img.src" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>{{ img.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="text1">
+    <div class="paraDiv">
+      <p class="para">Animus Gaming club is where Gaming meets Coding.</p>
+    </div>
+    <img src="../../../../assets/animus.png" class="logo" />
+  </div>
+  <div>
+    <div class="text2">
+      <span class="span">
+        We are a group of passionate gamers and developers who share the same
+        vision: to create an environment that fosters creativity, innovation. We
+        offer diffrent kinds of trainings and workshops specially for our
+        members.
+      </span>
+    </div>
+    <div style="display: flex">
+      <img src="../../../../assets/creators.png" alt="" class="creators" />
+      <div class="text4">
+        <h2 style="font-size: 5vw; text-align: center">Creators</h2>
+        <hr style="border: 3px solid" />
+        <br />
+        <ul>
+         
+          <li>Mouhamed Taleb Mouelhi</li>
+          <br />
+          <li>Mouhamed Amine Jabou</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text3">
+    <div>
+      <a
+        href="https://www.instagram.com/animus__gaming/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+        style="text-decoration: none; color: #000000"
+        ><i class="fa-brands fa-instagram fa-2xl" style="color: #000000"></i>
+        animus_gaming</a
+      >
+      <br /><br />
+      <a
+        href="https://www.facebook.com/AnimusGamingIsetCh"
+        style="text-decoration: none; color: #000000"
+        ><i class="fa-brands fa-facebook fa-2xl" style="color: #000000"></i>
+        AnimusGaming Iset'Ch</a
+      >
+    </div>
+    <div>Copyright © 2023 Animus Club Iset Charguia. All Rights Reserved.</div>
+    <div>
+      <i class="fa-solid fa-location-dot fa-xl" style="color: #000000"></i>
+      84967 Rue de la Paix, ISET Charguia, <br />
+      Charguia2 Tunisia <br /><br />
+      <i class="fa-solid fa-at fa-xl" style="color: #000000"></i>
+      animsgamingisetch@gmail.com <br /><br />
+      <i class="fa-solid fa-phone fa-xl" style="color: #000000"></i> 76 543 210
+    </div>
+  </div>
+</div>

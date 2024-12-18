@@ -1,0 +1,71 @@
+input.ng-invalid{
+  border-left: 5px solid red;
+}
+
+input.ng-valid{
+  border-left: 5px solid green;
+}
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+  width: 500px;
+  min-height: 300px;
+  max-height: 50vh;
+  background: rgb(90, 7, 129);
+  background: linear-gradient(16deg, #662c91 52%, #9047c3 97%);
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.457);
+}
+
+.login {
+  margin: 0;
+  font-family: "asix";
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+input {
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.564);
+  font-family: "chakraBold";
+  width: 400px;
+  height: 40px;
+  border: 0;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.loginbutton {
+  float: right;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.564);
+  font-family: "chakraBold";
+  color: #662c91;
+  border: 0;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.signuptxt {
+  text-align: center;
+  font-family: "chakrabold";
+  font-size: 30px;
+  color: #fff;
+}
+.signuplink {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 20px;
+}

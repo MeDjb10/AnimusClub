@@ -1,0 +1,42 @@
+<div class="page-wrapper">
+  <div class="content">
+    <div class="row">
+      <div class="col-12">
+        <div class="card member-panel">
+          <div class="card-header bg-white">
+            <h4 class="card-title mb-0">Member</h4>
+          </div>
+          <div class="card-body">
+            <ul class="contact-list">
+              <li *ngFor="let user of Users">
+                <ng-container *ngIf="!user.isAdmin">
+                  <div class="contact-cont">
+                    <div class="float-left user-img m-r-10">
+                      <a href="#" title="John Doe"><img src="assets/img/user.jpg" alt=""
+                          class="w-40 rounded-circle" /></a>
+                    </div>
+                    <div class="contact-info d-flex justify-content-between">
+                      <div>
+                        <span class="contact-name text-ellipsis">{{
+                          user.username
+                        }}</span>
+                        <span class="contact-date">{{ user.email }}</span>
+                      </div>
+
+                      <div>
+                        <button class="btn btn-danger btn-primary-one" (click)="deleteUser(user.id)">
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

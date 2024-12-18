@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="log" id="logindiv">
+    <p class="login">LOGIN</p>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="Username"
+      /><br />
+      <div
+        class="text-danger fw-bold" 
+        *ngIf="
+          loginForm.controls['username'].invalid &&
+          (loginForm.controls['username'].dirty ||
+            loginForm.controls['username'].touched)
+        "
+      >
+        <div
+          *ngIf="loginForm.controls['username'].errors?.['minlength']"
+          class="alert alert-warning p-2"
+        >
+          min length 3
+        </div>
+        <div
+          *ngIf="loginForm.controls['username'].errors?.['required']"
+          class="alert alert-danger p-2"
+        >
+          req
+        </div>
+      </div>
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <div
+        class="text-danger fw-bold"
+        *ngIf="
+          loginForm.controls['password'].invalid &&
+          (loginForm.controls['password'].dirty ||
+            loginForm.controls['password'].touched)
+        "
+      >
+        <div
+          *ngIf="loginForm.controls['password'].errors?.['required']"
+          class="alert alert-danger p-2"
+        >
+          req
+        </div>
+        <div
+          *ngIf="loginForm.controls['password'].errors?.['minlength']"
+          class="alert alert-warning p-2"
+        >
+          min length 3
+        </div>
+        <div
+          *ngIf="loginForm.controls['password'].errors?.['maxlength']"
+          class="alert alert-warning p-2"
+        >
+          max length 8
+        </div>
+      </div>
+      <br />
+      <button type="submit" class="loginbutton">
+        Login
+        <i class="fa-solid fa-arrow-right" style="color: #662c91"></i>
+      </button>
+    </form>
+  </div>
+</div>
+<p class="signuptxt">
+  Not A Member?
+  <br />
+  <a class="signuplink" routerLink="/loginpage/signup"> Join Us Now!! </a>
+</p>
