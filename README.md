@@ -66,17 +66,23 @@ This project incorporates various Angular features, including:
 
 Here are some screenshots of the project:  
 
+### Landing Page  
+![Homepage](screenshots/AboutUs.png)  
+
 ### Homepage  
 ![Homepage](screenshots/HomePage.png)  
 
-### AboutUs  
-![Homepage](screenshots/AboutUs.png)  
+### Trainings & Workshops 
+![Homepage](screenshots/trainnings.png)  
 
-### Login Form  
-![Form Example](screenshots/LoginForm.png)  
+### Profile 
+![Homepage](screenshots/profile.png) 
+
+### SignUp Form  
+![Form Example](screenshots/singUp.png)  
 
 ### Admin Dashboard  
-![List of Members](screenshots/AdminDashboard.png)  
+![List of Members](screenshots/adminDashboard.png)  
 
 ---
 
